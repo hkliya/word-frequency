@@ -12,4 +12,9 @@ describe("Word Frequency", function(){
     it("should return empty string given empty string", function(){
         expect(wordFrequency('')).to.equal('');
     });
+
+    it("should return a 1 given a", function(){
+        expect(wordFrequency('a')).to.equal('a 1');
+    });
+
 });
