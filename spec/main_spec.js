@@ -29,4 +29,8 @@ describe("Word Frequency", function(){
         expect(wordFrequency('a b b')).to.equal('b 2\r\na 1');
     });
 
+    it("should handle multiple space", function(){
+        expect(wordFrequency('a   b')).to.equal('a 1\r\nb 1');
+    });
+
 });
