@@ -17,4 +17,7 @@ describe("Word Frequency", function(){
         expect(wordFrequency('a')).to.equal('a 1');
     });
 
+    it("should return a 1 b 1 given a b", function(){
+        expect(wordFrequency('a b')).to.equal('a 1\r\nb 1');
+    });
 });
